@@ -90,7 +90,14 @@ public class NumberTriangle {
      */
     public int retrieve(String path) {
         NumberTriangle curr = this;
+        for (char direction : path.toCharArray()) {
+            if (direction == 'l') {
+                curr = curr.left;
 
+            } else if (direction == 'r') {
+                curr = curr.right;
+            }
+        }
         return curr.getRoot();
     }
 
