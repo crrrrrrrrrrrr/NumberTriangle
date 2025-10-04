@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NumberTriangleTest {
+class NumberTriangleTest {
 
     // this is testing that aliasing exists between
     // mt.left.right and mt.right.left
