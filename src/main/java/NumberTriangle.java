@@ -124,15 +124,15 @@ public class NumberTriangle {
             // convert the string line into a list with each number as an element
             String[] elements = line.split(" ");
 
-            for (int e = 0; e < elements.length; e++) {
+            for (String element : elements) {
                 // special case of first triangle
                 if (top == null) { // add first element as TOTAL tree root, add to history list, and move on
-                    top = new NumberTriangle(Integer.parseInt(elements[e]));
+                    top = new NumberTriangle(Integer.parseInt(element));
                     newTriangles.add(top);
 
                 } else { //  (not first element of first row)
                     // need to convert to int, assign it as a root of tree
-                    NumberTriangle temp = new NumberTriangle(Integer.parseInt(elements[e]));
+                    NumberTriangle temp = new NumberTriangle(Integer.parseInt(element));
                     // add tree to history list of trees
                     newTriangles.add(temp);
                 }
