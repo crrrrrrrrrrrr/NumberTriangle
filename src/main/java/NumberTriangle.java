@@ -167,9 +167,6 @@ public class NumberTriangle {
 
         NumberTriangle mt = NumberTriangle.loadTriangle("input_tree.txt");
 
-        // testing
-        //System.out.println("path:");
-        //System.out.println(mt.retrieve("rrrrllll"));
 
     }
 }
